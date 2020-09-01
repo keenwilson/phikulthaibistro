@@ -1,0 +1,10 @@
+**/*.svg
+package.json
+.DS_Store
+.eslintignore
+*.png
+.gitignore
+.prettierignore
+*.lock
+yarn-error.log
+public/error.html
