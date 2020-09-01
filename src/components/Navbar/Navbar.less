@@ -41,16 +41,16 @@
     }
 
     .bars-menu {
-      height: 32px;
+      color: @pktb-md-purple;
       margin-right: 6px;
-      margin-top: 29px;
+      margin-top: 40px;
       display: none;
       background: none;
+      .svg-inline--fa {
+        font-size: 2em;
+      }
 
       @media (max-width: 1280px) {
-        .optimally-icon {
-          font-size: 38px;
-        }
         width: 48px;
         display: flex;
         justify-content: flex-end;
@@ -235,7 +235,7 @@
   }
 
   .anticon {
-    color: @optimally-md-blue;
+    color: @pktb-gray;
   }
   .ant-menu-submenu-arrow {
     display: none;
@@ -319,11 +319,6 @@
   }
 }
 
-.ant-menu-horizontal > .ant-menu-submenu-selected {
-  color: #00788c;
-  border-bottom: 0px solid transparent;
-}
-
 .ant-menu-submenu-popup .ant-menu-vertical.ant-menu-sub .ant-menu-item {
   margin-left: 0px;
   margin-top: 0px;
@@ -333,7 +328,7 @@
 }
 
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-  background-color: @optimally-md-blue-25;
+  background-color: #a98ec1;
 }
 
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
@@ -362,4 +357,8 @@
   padding: 0 0px;
   padding-right: 0;
   padding-left: 0;
+}
+
+.ant-menu-horizontal > .ant-menu-item a:hover {
+  color: #5c1c96;
 }

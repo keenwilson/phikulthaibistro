@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Menu } from 'antd'
-import { IconChevronDown, IconHome } from '../../components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHomeAlt } from '@fortawesome/pro-light-svg-icons'
+import SubheaderCopy from '../Typography/SubheaderCopy'
+import HeaderCopy from '../Typography/HeaderCopy'
 
-const SubMenu = Menu.SubMenu
 export default function LeftMenu() {
-  const onTitleClick = () => {}
   return (
     <>
       <Menu
@@ -14,49 +15,25 @@ export default function LeftMenu() {
       >
         <Menu.Item key="home" className="nav-heder">
           <Link to="/">
-            <IconHome />
+            <HeaderCopy>
+              <FontAwesomeIcon icon={faHomeAlt} />
+            </HeaderCopy>
           </Link>
         </Menu.Item>
         <Menu.Item key="products" className="nav-heder">
           <div>
-            <Link to="/products">
-              <h3 className="menu-title">Products</h3>
+            <Link to="/menu">
+              <HeaderCopy>Menu</HeaderCopy>
             </Link>
           </div>
         </Menu.Item>
         <Menu.Item key="process" className="nav-heder">
           <div>
-            <Link to="/our-process">
-              <h3 className="menu-title">Our Process</h3>
+            <Link to="/ourstory">
+              <HeaderCopy>Our Story</HeaderCopy>
             </Link>
           </div>
         </Menu.Item>
-        <SubMenu
-          title={
-            <>
-              <div className="submenu-title">
-                <h3 className="menu-title">Blogs</h3>
-                <IconChevronDown />
-              </div>
-            </>
-          }
-          popupClassName="left-submenu nav-header"
-          onTitleClick={onTitleClick}
-          key="blogs"
-        >
-          <Menu.Item key="blogs:1" className="left-submenu-item">
-            <Link to={`/blogs/vendor-relationships`}>
-              Vendor {'&'} Client Relationships
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="blogs:2">
-            <Link to={`/blogs/vendor-transparency`}>Vendor Transparency</Link>
-          </Menu.Item>
-
-          <Menu.Item key="blogs:3">
-            <Link to={`/blogs/benchmarking`}>Benchmarking</Link>
-          </Menu.Item>
-        </SubMenu>
       </Menu>
     </>
   )

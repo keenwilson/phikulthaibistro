@@ -1,51 +1,41 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import {
-  BodyCopy,
-  Mailto,
-  CopyToClipboard,
-  SocialMediaGroup,
-} from '../../components'
+import { BodyCopy, SubheaderCopy } from '../../components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import './NavFooter.less'
 
 export default function NavFooter(params) {
-  const [showCopyToClipboard, setShowCopyToClipboard] = useState(false)
-  const handleMouseHover = () => {
-    setShowCopyToClipboard(!showCopyToClipboard)
-  }
   return (
     <nav className="nav-footer">
       <div className="footer-content">
-        <div className="social-wrap">
-          <SocialMediaGroup className="social-group-desktop" ghost="true" />
-        </div>
         <div className="left-footer">
           <div className="navifation-wrap">
             <div className="footer-item">
-              <div className="footer-divider"></div>
-            </div>
-            <div className="footer-item">
-              <Link to="/products">
-                <BodyCopy white="true">Products</BodyCopy>
-              </Link>
-            </div>
+              <SubheaderCopy white="true">Hours</SubheaderCopy>
 
-            <div className="footer-item">
-              <Link to="/our-process">
-                <BodyCopy white="true">Our Process</BodyCopy>
-              </Link>
+              <BodyCopy white="true">
+                Tuesday 11 AM-9 PM
+                <br />
+                Wednesday 11 AM-9 PM
+                <br />
+                Thursday 11 AM-9 PM
+                <br />
+                Friday 11 AM-10 PM
+                <br />
+                Saturday 11 AM-10 PM
+                <br />
+                Sunday 11 AM-9 PM
+                <br />
+                Monday Closed
+              </BodyCopy>
             </div>
             <div className="footer-item">
-              <Link to={`/blogs/vendor-relationships`}>
-                <BodyCopy white="true">Blogs</BodyCopy>
-              </Link>
-            </div>
-            <div className="footer-item ">
-              <div className="request-demo">
-                <Link to="/request-demo">
-                  <BodyCopy white="true">Request Demo</BodyCopy>
-                </Link>
-              </div>
+              <BodyCopy white="true">
+                {' '}
+                Seating at Phikul Thai Bistro is available on a walk-in basis
+                only.
+              </BodyCopy>
             </div>
           </div>
         </div>
@@ -53,37 +43,51 @@ export default function NavFooter(params) {
           <div className="footer-item">
             <div className="footer-divider"></div>
           </div>
+
           <div className="footer-item">
-            <SocialMediaGroup className="social-group-mobile" />
-          </div>
-          <div className="footer-item">
-            <BodyCopy white="true">© 2020 Optimally</BodyCopy>
+            <BodyCopy white="true">© 2020 Phikul Thai Bistro</BodyCopy>
           </div>
           <div className="footer-item">
             <BodyCopy white="true">
-              11300 Tomahawk Creek Parkway
+              17 East 5th Street
               <br />
-              Leawood, KS 66211
+              Kansas City, MO 64106
             </BodyCopy>
-          </div>
-          <div
-            className="footer-item mailto-line"
-            onMouseEnter={handleMouseHover}
-            onMouseLeave={handleMouseHover}
-          >
-            <Mailto
-              className="mailto-text"
-              email="info@optimally.com"
-              headers={{ subject: 'Request for Information' }}
-              obfuscate={true}
+            <br />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://goo.gl/maps/7tyySYPeNj9Nbcoh9"
             >
-              <BodyCopy className="info-email" white="true" link="true">
-                info@optimally.com
+              <BodyCopy white="true" link="true">
+                Get Directions
               </BodyCopy>
-            </Mailto>
-            {showCopyToClipboard && (
-              <CopyToClipboard value=" info@optimally.com" />
-            )}
+            </a>
+          </div>
+          <div className="footer-item">
+            {' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="tel:+1-816-894-3993"
+            >
+              <BodyCopy white="true" link="true">
+                Tel. (816) 894-3993
+              </BodyCopy>
+            </a>
+          </div>
+          <div className="footer-item">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/PhikulThaiBistro"
+              rel="noopener noreferrer"
+            >
+              <BodyCopy white="true" link="true">
+                Follow us on{' '}
+                <FontAwesomeIcon className="link-color" icon={faFacebookF} />
+                acebook
+              </BodyCopy>
+            </a>
           </div>
         </div>
       </div>

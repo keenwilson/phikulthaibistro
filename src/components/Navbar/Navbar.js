@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import LeftMenu from './LeftMenu'
 import RightMenu from './RightMenu'
-import logo from '../../images/hires/Optimally_LOGO_2_COLOR.png'
+import logo from '../../assets/logo/phikulthaibistro_logo.png'
 import { Drawer } from 'antd'
-import { IconBar, IconBack } from '../../components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faArrowAltToLeft } from '@fortawesome/pro-light-svg-icons'
 import './Navbar.less'
 
 // For reference:  https://github.com/Rupinderthind/Ant_design_navbar
@@ -22,11 +23,7 @@ export default function Navbar() {
     <nav className="menu-bar">
       <div className="logo">
         <Link to="/">
-          <img
-            className="navbar-logo"
-            alt="Optimally Business Performance"
-            src={logo}
-          />
+          <img className="navbar-logo" alt="Phikul Thai Bistro" src={logo} />
         </Link>
       </div>
       <div className="menu-content">
@@ -38,7 +35,7 @@ export default function Navbar() {
         </div>
         <div className="navbar-mobile">
           <div className="bars-menu">
-            <IconBar primary="true" onClick={showDrawer} />
+            <FontAwesomeIcon icon={faBars} onClick={showDrawer} />
           </div>
         </div>
       </div>
@@ -48,7 +45,7 @@ export default function Navbar() {
             <div className="left-float"></div>
 
             <div className="right-float">
-              <IconBack primary="true" onClick={onClose} />
+              <FontAwesomeIcon icon={faArrowAltToLeft} onClick={onClose} />
             </div>
           </>
         }
