@@ -11,29 +11,33 @@ export default function LeftMenu() {
     <>
       <Menu
         className="left-menu-wrapper"
-        mode={window.innerWidth > 1280 ? 'horizontal' : 'inline'}
+        mode={window.innerWidth > 1024 ? 'horizontal' : 'inline'}
       >
         <Menu.Item key="home" className="nav-heder">
           <Link to="/">
-            <HeaderCopy white="true">
+            <HeaderCopy white={window.innerWidth > 1024 ? 'true' : null}>
               <FontAwesomeIcon icon={faHomeAlt} />
             </HeaderCopy>
           </Link>
         </Menu.Item>
-        <Menu.Item key="products" className="nav-heder">
+        <Menu.Item key="menu" className="nav-heder">
           <div>
             <Link to="/menu">
-              <HeaderCopy white="true">Menu</HeaderCopy>
+              <HeaderCopy white={window.innerWidth > 1024 ? 'true' : null}>
+                Menu
+              </HeaderCopy>
             </Link>
           </div>
         </Menu.Item>
-        <Menu.Item key="process" className="nav-heder">
+        {/* <Menu.Item key="process" className="nav-heder">
           <div>
             <Link to="/ourstory">
-              <HeaderCopy white="true">Our Story</HeaderCopy>
+              <HeaderCopy white={window.innerWidth > 1024 ? 'true' : null}>
+                Our Story
+              </HeaderCopy>
             </Link>
           </div>
-        </Menu.Item>
+        </Menu.Item> */}
       </Menu>
     </>
   )

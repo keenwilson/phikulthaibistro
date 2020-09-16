@@ -57,6 +57,7 @@ export default function Navbar() {
         onClose={onClose}
         onClick={onClose}
         visible={visible}
+        bodyStyle={{ color: '#272725', backgroundColor: '#272725' }}
       >
         <LeftMenu />
         <RightMenu />

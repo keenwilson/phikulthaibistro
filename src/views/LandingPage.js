@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import hero_desktop from '../assets/images/hero_phikulthai_1.jpg'
 import sub_desktop from '../assets/images/hero_phikulthai_2.jpg'
@@ -9,17 +9,6 @@ import { HeaderCopy, SubheaderCopy, BodyCopy } from '../components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookOpen, faFileDownload } from '@fortawesome/pro-light-svg-icons'
 export default function LandingPage(params) {
-  const [hero, setHero] = useState(null)
-  const [mobile, setMobile] = useState(null)
-  useEffect(() => {
-    if (window.innerWidth > 620) {
-      setHero(hero_desktop)
-      setMobile(false)
-    } else {
-      setHero(hero_mobile)
-      setMobile(true)
-    }
-  }, [window.innerWidth])
   return (
     <div className="landing-page-wrapper">
       <div className="landing-page-header">
@@ -37,7 +26,7 @@ export default function LandingPage(params) {
       </div>
       <img
         className="hero-image"
-        src={hero}
+        src={hero_desktop}
         alt="Phikul Thai Bistro is located  next to the City Market streetcar stop"
       />
 
@@ -51,7 +40,7 @@ export default function LandingPage(params) {
             />
           </div>
         </div>
-        <div className="col-2sm">
+        <div className="col-2sm about">
           <HeaderCopy white="true" className="tall">
             About Phikul Thai Bistro
           </HeaderCopy>
@@ -89,7 +78,7 @@ export default function LandingPage(params) {
       </div>
 
       <div className="row">
-        <div className="col-2sm">
+        <div className="col-2sm hours">
           <HeaderCopy white="true" className="tall">
             Hours
           </HeaderCopy>
@@ -119,7 +108,7 @@ export default function LandingPage(params) {
       </div>
 
       <div className="row">
-        <div className="col-3">
+        <div className="col-2-sm">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.919349585775!2d-94.58428034867876!3d39.108306279438224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0f140c24064bb%3A0x2ee8039378a7720f!2sPhikul%20Thai%20Bistro!5e0!3m2!1sen!2sus!4v1600271861803!5m2!1sen!2sus"
             width="400"
@@ -131,7 +120,7 @@ export default function LandingPage(params) {
             tabindex="0"
           ></iframe>
         </div>
-        <div className="col-3">
+        <div className="col-2lg location">
           <HeaderCopy white="true" className="tall">
             Location
           </HeaderCopy>
@@ -149,8 +138,6 @@ export default function LandingPage(params) {
               Get Directions
             </SubheaderCopy>
           </a>
-        </div>
-        <div className="col-3">
           <HeaderCopy white="true" className="tall">
             Contact Us
           </HeaderCopy>
@@ -166,37 +153,6 @@ export default function LandingPage(params) {
           </a>
         </div>
       </div>
-      {mobile && (
-        <div className="content-item">
-          <div className="action-item">
-            <div className="mobile-tile">
-              <Link to="/menu">
-                <FontAwesomeIcon className="link-color" icon={faBookOpen} />
-                <SubheaderCopy className="small" link="true">
-                  View Menu
-                </SubheaderCopy>
-              </Link>
-            </div>
-          </div>
-          <div className="action-item">
-            <div className="mobile-tile">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={
-                  process.env.PUBLIC_URL +
-                  '/Phikul-Thai-Bistro-Takeout-Menu.pdf'
-                }
-              >
-                <FontAwesomeIcon className="link-color" icon={faFileDownload} />
-                <SubheaderCopy className="small" link="true">
-                  Download PDF
-                </SubheaderCopy>
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
 
       <NavFooter />
     </div>

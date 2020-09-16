@@ -1,0 +1,67 @@
+.menu-page-wrapper {
+  background-color: @pktb-gray;
+
+  .menu-page-header {
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .menu-card {
+    width: 90%;
+    background-color: white;
+    padding: 2em;
+    text-align: center;
+    @media (max-width: 1024px) {
+      width: auto;
+      margin: 2em;
+    }
+  }
+  .menu-category {
+    text-align: left;
+  }
+  .phikul-icon {
+    height: 30px;
+    width: 30px;
+  }
+}
+.extra-tall {
+  font-size: 2.8em;
+}
+.tall {
+  font-size: 2.4em;
+}
+.medium {
+  font-size: 2.1em;
+  text-align: center;
+}
+.normal {
+  font-size: 1.8em;
+}
+
+.action-item {
+  margin-top: 20px;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 80vw;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  margin: 2vw auto 0 auto;
+  padding-bottom: 2vw;
+
+  .col-3 {
+    width: 30%;
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import { Menu } from 'antd'
 import { BodyCopy } from '../../components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faPhoneAlt } from '@fortawesome/pro-light-svg-icons'
 export default function RightMenu(props) {
   return (
     <>
@@ -18,7 +19,12 @@ export default function RightMenu(props) {
             href="tel:+1-816-894-3993"
           >
             <BodyCopy white="true" link="true">
-              Tel. (816) 894 - 3993
+              <FontAwesomeIcon
+                className="link-color"
+                icon={faPhoneAlt}
+                {...props}
+              />{' '}
+              (816) 894 - 3993
             </BodyCopy>
           </a>
         </Menu.Item>

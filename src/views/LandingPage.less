@@ -12,9 +12,6 @@
     z-index: 1;
     margin: 2vw 10vw;
     width: 80vw;
-    @media (max-width: 620px) {
-      width: 100%;
-    }
   }
 }
 .extra-tall {
@@ -39,24 +36,57 @@
   align-items: center;
   width: 80vw;
   margin: 2vw auto;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
   .col-2lg {
     width: 40vw;
     margin-right: 2vw;
+    @media (max-width: 1024px) {
+      width: 100vw;
+      order: 2;
+    }
   }
   .col-2sm {
     width: 36vw;
     margin-right: 2vw;
-  }
-  .col-3 {
-    width: 26vw;
+    @media (max-width: 1024px) {
+      width: 100vw;
+      order: 1;
+    }
   }
 }
-
+.about {
+  @media (max-width: 1024px) {
+    text-align: center;
+    padding: 2em;
+  }
+}
+.hours {
+  @media (max-width: 1024px) {
+    text-align: center;
+    padding: 2em;
+  }
+}
+.location {
+  padding-left: 2vw;
+  @media (max-width: 1024px) {
+    text-align: center;
+  }
+}
 .sub-image {
   width: 100%;
   object-fit: cover;
   width: 40vw;
   height: 38vw;
+  @media (max-width: 1024px) {
+    width: 80vw;
+    height: 78vw;
+    margin-left: 10vw;
+  }
 }
 
 .content {
