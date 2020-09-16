@@ -1,3 +1,116 @@
+.landing-page-wrapper {
+  background-color: @pktb-gray;
+
+  .landing-page-header {
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .hero-image {
+    display: block;
+    overflow: visible;
+    z-index: 1;
+    margin: 2vw 10vw;
+    width: 80vw;
+    @media (max-width: 620px) {
+      width: 100%;
+    }
+  }
+}
+.extra-tall {
+  font-size: 2.8em;
+}
+.tall {
+  font-size: 2.4em;
+}
+.medium {
+  font-size: 2.1em;
+}
+.normal {
+  font-size: 1.8em;
+}
+
+.action-item {
+  margin-top: 20px;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 80vw;
+  margin: 2vw auto;
+  .col-2lg {
+    width: 40vw;
+    margin-right: 2vw;
+  }
+  .col-2sm {
+    width: 36vw;
+    margin-right: 2vw;
+  }
+  .col-3 {
+    width: 26vw;
+  }
+}
+
+.sub-image {
+  width: 100%;
+  object-fit: cover;
+  width: 40vw;
+  height: 38vw;
+}
+
+.content {
+  padding: 40px;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.75);
+  @media (max-width: 620px) {
+    padding: 40px 10px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  .content-item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  @media (max-width: 620px) {
+    .content-item {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .action-item {
+      .mobile-tile {
+        width: 120px;
+        height: 120px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: @pktb-lt-purple;
+        &:hover {
+          background-color: @pktb-md-purple;
+        }
+      }
+    }
+    .extra-tall {
+      font-size: 2em;
+    }
+    .tall {
+      font-size: 1.8em;
+    }
+    .medium {
+      font-size: 1.4em;
+    }
+    .normal {
+      font-size: 1.6em;
+    }
+  }
+}
+
 .main-container {
   .hero {
     position: relative;
@@ -11,81 +124,16 @@
       flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
-      .content {
-        padding: 40px;
-        width: 50%;
-        background-color: rgba(255, 255, 255, 0.75);
-        @media (max-width: 620px) {
-          padding: 40px 10px;
-          width: 90%;
-          background-color: rgba(255, 255, 255, 0.85);
-        }
-        .content-item {
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: center;
-          align-items: center;
-        }
 
-        .action-item {
-          margin-top: 20px;
-        }
-        .extra-tall {
-          font-size: 2.8em;
-        }
-        .tall {
-          font-size: 2.4em;
-        }
-        .medium {
-          font-size: 2.1em;
-        }
-        .normal {
-          font-size: 1.8em;
-        }
-        @media (max-width: 620px) {
-          .content-item {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            align-items: center;
-          }
-          .action-item {
-            .mobile-tile {
-              width: 120px;
-              height: 120px;
-              display: flex;
-              flex-flow: column nowrap;
-              justify-content: center;
-              align-items: center;
-              background-color: @pktb-lt-purple;
-              &:hover {
-                background-color: @pktb-md-purple;
-              }
-            }
-          }
-          .extra-tall {
-            font-size: 2em;
-          }
-          .tall {
-            font-size: 1.8em;
-          }
-          .medium {
-            font-size: 1.4em;
-          }
-          .normal {
-            font-size: 1.6em;
-          }
-        }
-      }
-    }
-    .hero-image {
-      display: block;
-      overflow: visible;
-      z-index: 1;
-      margin: 0 auto;
-      width: 76%;
-      @media (max-width: 620px) {
+      .hero-image {
+        display: block;
+        overflow: visible;
+        z-index: 1;
+        margin: 0 auto;
         width: 100%;
+        @media (max-width: 620px) {
+          width: 100%;
+        }
       }
     }
   }

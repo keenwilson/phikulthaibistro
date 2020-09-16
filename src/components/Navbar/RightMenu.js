@@ -17,7 +17,9 @@ export default function RightMenu(props) {
             rel="noopener noreferrer"
             href="tel:+1-816-894-3993"
           >
-            <BodyCopy link="true">Tel. (816) 894-3993</BodyCopy>
+            <BodyCopy white="true" link="true">
+              Tel. (816) 894 - 3993
+            </BodyCopy>
           </a>
         </Menu.Item>
         <Menu.Item key="facebook">
@@ -26,7 +28,7 @@ export default function RightMenu(props) {
             href="https://www.facebook.com/PhikulThaiBistro"
             rel="noopener noreferrer"
           >
-            <BodyCopy link="true">
+            <BodyCopy white="true" link="true">
               <FontAwesomeIcon
                 className="link-color"
                 icon={faFacebookF}

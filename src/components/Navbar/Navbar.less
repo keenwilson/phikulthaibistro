@@ -4,7 +4,7 @@
   @media (max-width: 1280px) {
     padding: 2px 20px 2px 44px;
   }
-  background-color: white;
+  background-color: @pktb-gray;
   border-bottom: solid 0px #e8e8e8;
   overflow: auto;
   display: flex;
@@ -15,15 +15,18 @@
     float: left;
     padding: 2px 34px;
     height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media (max-width: 1280px) {
       min-width: 150px;
       padding: 0;
     }
     .navbar-logo {
-      height: 96px;
+      height: 60px;
       display: inline-block;
       @media (max-width: 1280px) {
-        height: 80px;
+        height: 60px;
       }
     }
   }
@@ -31,6 +34,7 @@
     width: calc(100% - 320px);
     float: left;
     height: 96px;
+
     @media (max-width: 1280px) {
       width: calc(100% - 210px);
       float: right;
@@ -42,6 +46,7 @@
 
     .bars-menu {
       color: @pktb-md-purple;
+
       margin-right: 6px;
       margin-top: 40px;
       display: none;
@@ -64,11 +69,16 @@
       }
     }
     .ant-menu {
-      font-size: 0.875em;
+      font-size: 1.2em;
       background: none;
+      color: white;
+
+      .ant-menu-item {
+        color: white;
+      }
     }
     .ant-menu-horizontal > .ant-menu-item-selected {
-      color: #00788c;
+      color: @pktb-gray;
       border-bottom: 0px solid transparent;
     }
 
@@ -103,35 +113,6 @@
         margin-left: 0px;
       }
 
-      .submenu-title {
-        .menu-title {
-        }
-        h3 {
-          display: inline;
-          position: relative;
-          top: 2px;
-          left: 0px;
-        }
-        .svg-inline--fa.fa-w-14 {
-          &.fa-chevron-down {
-            font-size: 0.85em;
-            position: relative;
-            top: 0px;
-            left: 6px;
-          }
-          &.fa-chevron-up {
-            font-size: 0.65em;
-            position: relative;
-            top: 0px;
-            left: 6px;
-          }
-          &.fa-bars {
-            width: 2em;
-            position: relative;
-            top: 8px;
-          }
-        }
-      }
       .left-submenu-item {
         margin-left: 0px;
         padding: 24px 0;

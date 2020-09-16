@@ -15,7 +15,7 @@ export default function LeftMenu() {
       >
         <Menu.Item key="home" className="nav-heder">
           <Link to="/">
-            <HeaderCopy>
+            <HeaderCopy white="true">
               <FontAwesomeIcon icon={faHomeAlt} />
             </HeaderCopy>
           </Link>
@@ -23,14 +23,14 @@ export default function LeftMenu() {
         <Menu.Item key="products" className="nav-heder">
           <div>
             <Link to="/menu">
-              <HeaderCopy>Menu</HeaderCopy>
+              <HeaderCopy white="true">Menu</HeaderCopy>
             </Link>
           </div>
         </Menu.Item>
         <Menu.Item key="process" className="nav-heder">
           <div>
             <Link to="/ourstory">
-              <HeaderCopy>Our Story</HeaderCopy>
+              <HeaderCopy white="true">Our Story</HeaderCopy>
             </Link>
           </div>
         </Menu.Item>

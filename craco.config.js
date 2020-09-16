@@ -11,7 +11,7 @@ module.exports = {
           lessOptions: {
             modifyVars: {
               // Brand
-              '@pktb-gray': '#252227',
+              '@pktb-gray': '#272725',
               '@pktb-dk-purple': '#452b5d',
               '@pktb-md-purple': '#5c1c96',
               '@pktb-lt-purple': '#a98ec1',
