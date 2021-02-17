@@ -14,6 +14,58 @@
     width: 80vw;
   }
 }
+.order-online {
+  background-color: @pktb-gold;
+  width: 33%;
+  margin: 1em 0;
+  border-radius: 6px;
+  .order-online-content {
+    width: 100%;
+    height: 100%;
+    padding: 1em 2em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6em;
+    &:hover {
+      color: #5c1c96 !important;
+    }
+  }
+
+  .order-online-text {
+    margin-left: 1em;
+  }
+  cursor: pointer;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+  &.list {
+    font-size: 1.2em;
+    width: 50%;
+    .order-online-content {
+      width: 100%;
+      height: 100%;
+      padding: 1em 2em;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.2em;
+      &:hover {
+        color: #5c1c96 !important;
+      }
+    }
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+}
+
+.left {
+  text-align: left;
+}
 .extra-tall {
   font-size: 2.8em;
 }

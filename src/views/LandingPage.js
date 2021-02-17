@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Button } from 'antd'
 import hero_desktop from '../assets/images/hero_phikulthai_1.jpg'
 import sub_desktop from '../assets/images/hero_phikulthai_2.jpg'
 import hero_mobile from '../assets/images/hero_phikulthai_mobile_1.jpg'
@@ -7,7 +8,11 @@ import './LandingPage.less'
 import { NavFooter } from '../components'
 import { HeaderCopy, SubheaderCopy, BodyCopy } from '../components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBookOpen, faFileDownload } from '@fortawesome/pro-light-svg-icons'
+import {
+  faBookOpen,
+  faFileDownload,
+  faSoup,
+} from '@fortawesome/pro-light-svg-icons'
 export default function LandingPage(params) {
   return (
     <div className="landing-page-wrapper">
@@ -15,14 +20,27 @@ export default function LandingPage(params) {
         <HeaderCopy white="true" className="extra-tall">
           WELCOME
         </HeaderCopy>
-
         <HeaderCopy white="true" className="tall">
           TO PHIKUL THAI BISTRO
         </HeaderCopy>
-
-        <SubheaderCopy white="true" className="medium">
+        <SubheaderCopy white="true" className="tall left">
           Thai Comfort Food at Kansas City's River Market
         </SubheaderCopy>
+
+        <div className="order-online">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.orderphikulthaibistro.com/"
+          >
+            <div className="order-online-content">
+              <SubheaderCopy className="normal" link="true">
+                <FontAwesomeIcon className="link-color" icon={faSoup} />
+                <span className="order-online-text">Order Online</span>
+              </SubheaderCopy>
+            </div>
+          </a>
+        </div>
       </div>
       <img
         className="hero-image"
@@ -73,6 +91,20 @@ export default function LandingPage(params) {
                 Download Our PDF Menu
               </SubheaderCopy>
             </a>
+            <div className="order-online list">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.orderphikulthaibistro.com/"
+              >
+                <div className="order-online-content">
+                  <SubheaderCopy className="normal" link="true">
+                    <FontAwesomeIcon className="link-color" icon={faSoup} />
+                    <span className="order-online-text">Order Online</span>
+                  </SubheaderCopy>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -118,6 +150,7 @@ export default function LandingPage(params) {
             allowfullscreen=""
             aria-hidden="false"
             tabindex="0"
+            title="maps"
           ></iframe>
         </div>
         <div className="col-2lg location">

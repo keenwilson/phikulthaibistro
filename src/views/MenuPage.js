@@ -16,6 +16,8 @@ import { DrinksData } from '../assets/RestaurantMenu/drinksData'
 import { HouseFavoriteData } from '../assets/RestaurantMenu/houseFavoritesData'
 import NavFooter from '../components/NavFooter/NavFooter'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPepperHot, faFileDownload } from '@fortawesome/pro-light-svg-icons'
 export default function MenuPage(params) {
   let mobile
   if (window.innerWidth > 620) {
@@ -31,8 +33,32 @@ export default function MenuPage(params) {
         </HeaderCopy>
         <SubheaderCopy white="true" className="normal">
           Our flavorful fried rice dishes, stir-frys, noodles and curries are
-          available in mild * , medium ** , hot *** , and Thai hot **** .
+          available in mild <FontAwesomeIcon icon={faPepperHot} /> , medium{' '}
+          <FontAwesomeIcon icon={faPepperHot} />
+          <FontAwesomeIcon icon={faPepperHot} /> , hot{' '}
+          <FontAwesomeIcon icon={faPepperHot} />
+          <FontAwesomeIcon icon={faPepperHot} />
+          <FontAwesomeIcon icon={faPepperHot} /> , and Thai hot{' '}
+          <FontAwesomeIcon icon={faPepperHot} />
+          <FontAwesomeIcon icon={faPepperHot} />
+          <FontAwesomeIcon icon={faPepperHot} />
+          <FontAwesomeIcon icon={faPepperHot} />.
         </SubheaderCopy>
+
+        <div className="download">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              process.env.PUBLIC_URL + '/Phikul-Thai-Bistro-Takeout-Menu.pdf'
+            }
+          >
+            <SubheaderCopy className="normal" link="true" white="true">
+              <FontAwesomeIcon className="link-color" icon={faFileDownload} />{' '}
+              Download Our PDF Menu
+            </SubheaderCopy>
+          </a>
+        </div>
       </div>
       <div className="row">
         <div className="col-3">

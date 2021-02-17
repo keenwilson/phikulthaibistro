@@ -29,6 +29,19 @@ export default function LeftMenu() {
             </Link>
           </div>
         </Menu.Item>
+        <Menu.Item key="menu" className="nav-heder">
+          <div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.orderphikulthaibistro.com/"
+            >
+              <HeaderCopy white={window.innerWidth > 1024 ? 'true' : null}>
+                Order Online
+              </HeaderCopy>
+            </a>
+          </div>
+        </Menu.Item>
         {/* <Menu.Item key="process" className="nav-heder">
           <div>
             <Link to="/ourstory">
