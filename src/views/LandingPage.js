@@ -78,7 +78,8 @@ export default function LandingPage(params) {
               </SubheaderCopy>
             </Link>
           </div>
-          <div className="action-item">
+
+          <div className="action-item download">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -88,23 +89,21 @@ export default function LandingPage(params) {
             >
               <SubheaderCopy className="normal" link="true" white="true">
                 <FontAwesomeIcon className="link-color" icon={faFileDownload} />{' '}
-                Download Our PDF Menu
+                <span className="order-online-text">Download Our PDF Menu</span>
               </SubheaderCopy>
             </a>
-            <div className="order-online list">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.orderphikulthaibistro.com/"
-              >
-                <div className="order-online-content">
-                  <SubheaderCopy className="normal" link="true">
-                    <FontAwesomeIcon className="link-color" icon={faSoup} />
-                    <span className="order-online-text">Order Online</span>
-                  </SubheaderCopy>
-                </div>
-              </a>
-            </div>
+          </div>
+          <div className="action-item download">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.orderphikulthaibistro.com/"
+            >
+              <SubheaderCopy className="normal" link="true" white="true">
+                <FontAwesomeIcon className="link-color" icon={faSoup} />
+                <span className="order-online-text">Order Online</span>
+              </SubheaderCopy>
+            </a>
           </div>
         </div>
       </div>

@@ -31,8 +31,17 @@
   padding: 1em 2em;
   margin: 1em 0;
   border-radius: 6px;
+  &.action-item {
+    width: 50%;
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
   @media (max-width: 1024px) {
     width: 85%;
+  }
+  .order-online-text {
+    margin-left: 1em;
   }
 }
 .extra-tall {

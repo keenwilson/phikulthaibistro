@@ -17,7 +17,11 @@ import { HouseFavoriteData } from '../assets/RestaurantMenu/houseFavoritesData'
 import NavFooter from '../components/NavFooter/NavFooter'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPepperHot, faFileDownload } from '@fortawesome/pro-light-svg-icons'
+import {
+  faPepperHot,
+  faFileDownload,
+  faSoup,
+} from '@fortawesome/pro-light-svg-icons'
 export default function MenuPage(params) {
   let mobile
   if (window.innerWidth > 620) {
@@ -55,11 +59,24 @@ export default function MenuPage(params) {
           >
             <SubheaderCopy className="normal" link="true" white="true">
               <FontAwesomeIcon className="link-color" icon={faFileDownload} />{' '}
-              Download Our PDF Menu
+              <span className="order-online-text">Download Our PDF Menu</span>
+            </SubheaderCopy>
+          </a>
+        </div>
+        <div className="download">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.orderphikulthaibistro.com/"
+          >
+            <SubheaderCopy className="normal" link="true" white="true">
+              <FontAwesomeIcon className="link-color" icon={faSoup} />
+              <span className="order-online-text">Order Online</span>
             </SubheaderCopy>
           </a>
         </div>
       </div>
+
       <div className="row">
         <div className="col-3">
           <div className="menu-card">
