@@ -26,21 +26,6 @@ export default function LandingPage(params) {
         <SubheaderCopy white="true" className="tall left">
           Thai Comfort Food at Kansas City's River Market
         </SubheaderCopy>
-
-        <div className="order-online">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.orderphikulthaibistro.com/"
-          >
-            <div className="order-online-content">
-              <SubheaderCopy className="normal" link="true">
-                <FontAwesomeIcon className="link-color" icon={faSoup} />
-                <span className="order-online-text">Order Online</span>
-              </SubheaderCopy>
-            </div>
-          </a>
-        </div>
       </div>
       <img
         className="hero-image"
@@ -59,6 +44,28 @@ export default function LandingPage(params) {
           </div>
         </div>
         <div className="col-2sm about">
+          <HeaderCopy white="true" className="tall">
+            Dine-in and take-out
+          </HeaderCopy>
+
+          <SubheaderCopy white="true" className="normal">
+            Our Dining Room is now open. You can also place your carryout order
+            online.
+          </SubheaderCopy>
+          <div className="action-item download golden">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.orderphikulthaibistro.com/"
+            >
+              <div className="order-online-content">
+                <SubheaderCopy className="normal" link="true">
+                  <FontAwesomeIcon className="link-color" icon={faSoup} />
+                  <span className="order-online-text">Order Online</span>
+                </SubheaderCopy>
+              </div>
+            </a>
+          </div>
           <HeaderCopy white="true" className="tall">
             About Phikul Thai Bistro
           </HeaderCopy>
