@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from 'antd'
+import { Alert } from 'antd'
 import hero_desktop from '../assets/images/hero_phikulthai_1.jpg'
 import sub_desktop from '../assets/images/hero_phikulthai_2.jpg'
 import hero_mobile from '../assets/images/hero_phikulthai_mobile_1.jpg'
@@ -14,6 +14,12 @@ import {
   faSoup,
 } from '@fortawesome/pro-light-svg-icons'
 export default function LandingPage(params) {
+  var dateFrom = '07/19/2021'
+  var dateTo = '07/21/2021'
+  var from = Date.parse(dateFrom)
+  var to = Date.parse(dateTo)
+  var check = Date.now()
+  const showAlert = check <= to && check >= from ? true : false
   return (
     <div className="landing-page-wrapper">
       <div className="landing-page-header">
@@ -120,7 +126,12 @@ export default function LandingPage(params) {
           <HeaderCopy white="true" className="tall">
             Hours
           </HeaderCopy>
-
+          {showAlert && (
+            <Alert
+              message="We will closed from Monday July19 thru Wednesday, July 21 for a team retreat. We will be back to serve delicious Thai food on Thursday the 22nd."
+              type="info"
+            />
+          )}
           <SubheaderCopy white="true" className="normal">
             Tuesday 11 AM-9 PM
             <br /> Wednesday 11 AM-9 PM
