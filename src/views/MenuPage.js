@@ -53,9 +53,7 @@ export default function MenuPage(params) {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href={
-              process.env.PUBLIC_URL + '/Phikul-Thai-Bistro-Takeout-Menu.pdf'
-            }
+            href={process.env.PUBLIC_URL + '/Phikul-Thai-Bistro-2022-Menu.pdf'}
           >
             <SubheaderCopy className="normal" link="true" white="true">
               <FontAwesomeIcon className="link-color" icon={faFileDownload} />{' '}

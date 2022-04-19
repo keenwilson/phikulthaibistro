@@ -9,14 +9,14 @@ export const NoodlesData = [
     },
     price: {
       lunch: [
-        'Chicken, Pork, or Tofu $12.99',
-        'Beef or Shrimp $13.99',
-        'Seafood $15.99',
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
       dinner: [
-        'Chicken, Pork, or Tofu $13.99',
-        'Beef or Shrimp $15.99',
-        'Seafood $19.99',
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
     },
   },
@@ -25,20 +25,19 @@ export const NoodlesData = [
     description:
       'Stir-fried flat noodles in dark, rich and sweet soy sauce with broccoli and Gai lan.',
     image: {
-      path:
-        'https://s3-media2.fl.yelpcdn.com/bphoto/kZGaVheivp0Aea4H8U1UFw/o.jpg',
+      path: 'https://s3-media2.fl.yelpcdn.com/bphoto/kZGaVheivp0Aea4H8U1UFw/o.jpg',
       isPortrait: true,
     },
     price: {
       lunch: [
-        'Chicken, Pork, or Tofu $12.99',
-        'Beef or Shrimp $13.99',
-        'Seafood $15.99',
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
       dinner: [
-        'Chicken, Pork, or Tofu $13.99',
-        'Beef or Shrimp $15.99',
-        'Seafood $19.99',
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
     },
   },
@@ -47,20 +46,19 @@ export const NoodlesData = [
     description:
       'A spicy noodle dish, stir-fried flat noodles with fresh chili, garlic, bell pepper, and basil leaves.',
     image: {
-      path:
-        'https://s3-media1.fl.yelpcdn.com/bphoto/AxXIauad_2G8STN0Dir0Ag/o.jpg',
+      path: 'https://s3-media1.fl.yelpcdn.com/bphoto/AxXIauad_2G8STN0Dir0Ag/o.jpg',
       isPortrait: false,
     },
     price: {
       lunch: [
-        'Chicken, Pork, or Tofu $12.99',
-        'Beef or Shrimp $13.99',
-        'Seafood $15.99',
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
       dinner: [
-        'Chicken, Pork, or Tofu $13.99',
-        'Beef or Shrimp $15.99',
-        'Seafood $19.99',
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
     },
   },
@@ -69,20 +67,19 @@ export const NoodlesData = [
     description:
       'Stir-fried glass noodle with meats or tofu, bean sprouts, spring onion and cabbage.',
     image: {
-      path:
-        'https://s3-media3.fl.yelpcdn.com/bphoto/7qrGRuBYl1JP-lb6vVmWMw/o.jpg',
+      path: 'https://s3-media3.fl.yelpcdn.com/bphoto/7qrGRuBYl1JP-lb6vVmWMw/o.jpg',
       isPortrait: false,
     },
     price: {
       lunch: [
-        'Chicken, Pork, or Tofu $12.99',
-        'Beef or Shrimp $13.99',
-        'Seafood $15.99',
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
       dinner: [
-        'Chicken, Pork, or Tofu $13.99',
-        'Beef or Shrimp $15.99',
-        'Seafood $19.99',
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
     },
   },
@@ -95,8 +92,8 @@ export const NoodlesData = [
       isPortrait: false,
     },
     price: {
-      lunch: ['$19.99'],
-      dinner: ['$19.99'],
+      lunch: ['$22.99'],
+      dinner: ['$22.99'],
     },
   },
 ]

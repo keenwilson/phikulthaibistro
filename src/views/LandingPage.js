@@ -97,7 +97,7 @@ export default function LandingPage(params) {
               target="_blank"
               rel="noopener noreferrer"
               href={
-                process.env.PUBLIC_URL + '/Phikul-Thai-Bistro-Takeout-Menu.pdf'
+                process.env.PUBLIC_URL + '/Phikul-Thai-Bistro-2022-Menu.pdf'
               }
             >
               <SubheaderCopy className="normal" link="true" white="true">

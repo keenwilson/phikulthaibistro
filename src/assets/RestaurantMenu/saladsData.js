@@ -8,8 +8,8 @@ export const SaladsData = [
       isPortrait: false,
     },
     price: {
-      lunch: ['$12.99'],
-      dinner: ['$12.99'],
+      lunch: ['$15.99'],
+      dinner: ['$15.99'],
     },
   },
   {
@@ -18,8 +18,8 @@ export const SaladsData = [
       'Freshly Shredded Cucumber complemented by tomatos, garlic, chillies and roasted peanuts. Made in a tangy fish sauce or vegetarian sweet sauce. Served with sticky rice.',
     image: null,
     price: {
-      lunch: ['$12.99'],
-      dinner: ['$12.99'],
+      lunch: ['$14.99'],
+      dinner: ['$14.99'],
     },
   },
   {
@@ -32,14 +32,14 @@ export const SaladsData = [
     },
     price: {
       lunch: [
-        'Chicken, Pork, or Tofu $10.99',
-        'Beef or Shrimp $15.99',
-        'Seafood $19.99',
+        'Chicken, Pork, or Tofu $14.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
       dinner: [
-        'Chicken, Pork, or Tofu $12.99',
-        'Beef or Shrimp $15.99',
-        'Seafood $19.99',
+        'Chicken, Pork, or Tofu $14.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
     },
   },
@@ -52,11 +52,15 @@ export const SaladsData = [
       isPortrait: false,
     },
     price: {
-      lunch: [],
+      lunch: [
+        'Chicken, Pork, or Tofu $14.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
+      ],
       dinner: [
-        'Chicken, Pork, or Tofu $11.99',
-        'Beef or Shrimp $15.99',
-        'Seafood $19.99',
+        'Chicken, Pork, or Tofu $14.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
     },
   },

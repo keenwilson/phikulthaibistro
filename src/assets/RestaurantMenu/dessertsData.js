@@ -8,45 +8,44 @@ export const DessertsData = [
       isPortrait: false,
     },
     price: {
-      lunch: ['$8.00'],
-      dinner: ['$8.00'],
+      lunch: ['$9.00'],
+      dinner: ['$9.00'],
     },
   },
   {
     name: 'Coconut Ice Cream',
     description: null,
     price: {
-      lunch: ['$5.00'],
-      dinner: ['$5.00'],
+      lunch: ['$6.00'],
+      dinner: ['$6.00'],
     },
   },
   {
     name: 'Mango Ice Cream',
     description: null,
     price: {
-      lunch: ['$5.00'],
-      dinner: ['$5.00'],
+      lunch: ['$6.00'],
+      dinner: ['$6.00'],
     },
   },
   {
     name: 'Taro Ice Cream',
     description: null,
     image: {
-      path:
-        'https://s3-media2.fl.yelpcdn.com/bphoto/ldh9i3L2lOA9agp35V9Dlw/o.jpg',
+      path: 'https://s3-media2.fl.yelpcdn.com/bphoto/ldh9i3L2lOA9agp35V9Dlw/o.jpg',
       isPortrait: false,
     },
     price: {
-      lunch: ['$5.00'],
-      dinner: ['$5.00'],
+      lunch: ['$6.00'],
+      dinner: ['$6.00'],
     },
   },
   {
     name: 'Fried Banana with Ice Cream',
     description: null,
     price: {
-      lunch: ['$6.00'],
-      dinner: ['$6.00'],
+      lunch: ['$7.00'],
+      dinner: ['$7.00'],
     },
   },
 ]

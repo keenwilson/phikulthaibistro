@@ -4,16 +4,19 @@ export const HouseFavoriteData = [
     description:
       'Stir-fried meat with sweet basil leaves, fresh chili and garlic. Served over rice with a pan fried egg.',
     image: {
-      path:
-        'https://s3-media2.fl.yelpcdn.com/bphoto/FGHH7p9ZL40ogeMl0vPJbA/o.jpg',
+      path: 'https://s3-media2.fl.yelpcdn.com/bphoto/FGHH7p9ZL40ogeMl0vPJbA/o.jpg',
       isPortrait: false,
     },
     price: {
-      lunch: [],
+      lunch: [
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
+      ],
       dinner: [
-        'Chicken, Pork, or Tofu $13.99',
-        'Beef or Shrimp $15.99',
-        'Seafood $19.99',
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
     },
   },
@@ -26,11 +29,15 @@ export const HouseFavoriteData = [
       isPortrait: false,
     },
     price: {
-      lunch: [],
+      lunch: [
+        'Chicken, Pork, or Tofu $14.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
+      ],
       dinner: [
-        'Chicken, Pork, or Tofu $12.99',
-        'Beef or Shrimp $15.99',
-        'Seafood $19.99',
+        'Chicken, Pork, or Tofu $14.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
     },
   },
@@ -39,8 +46,8 @@ export const HouseFavoriteData = [
     description:
       'Freshly Shredded Cucumber complemented by tomatos, garlic, chillies and roasted peanuts. Made in a tangy fish sauce or vegetarian sweet sauce. Served with sticky rice.',
     price: {
-      lunch: [],
-      dinner: ['$12.99'],
+      lunch: ['$14.99'],
+      dinner: ['$14.99'],
     },
   },
   {
@@ -52,8 +59,8 @@ export const HouseFavoriteData = [
       isPortrait: false,
     },
     price: {
-      lunch: [],
-      dinner: ['$12.99'],
+      lunch: ['$15.99'],
+      dinner: ['$15.99'],
     },
   },
   {
@@ -65,11 +72,15 @@ export const HouseFavoriteData = [
       isPortrait: true,
     },
     price: {
-      lunch: [],
+      lunch: [
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
+      ],
       dinner: [
-        'Chicken, Pork, or Tofu $13.99',
-        'Beef or Shrimp $15.99',
-        'Seafood $19.99',
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
     },
   },
@@ -82,21 +93,25 @@ export const HouseFavoriteData = [
       isPortrait: false,
     },
     price: {
-      lunch: [],
+      lunch: [
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
+      ],
       dinner: [
-        'Chicken, Pork, or Tofu $13.99',
-        'Beef or Shrimp $15.99',
-        'Seafood $19.99',
+        'Chicken, Pork, or Tofu $15.99',
+        'Beef or Shrimp $17.99',
+        'Seafood $22.99',
       ],
     },
   },
   {
-    name: 'Mali Thai Catfish',
+    name: 'Phikul Thai Catfish',
     description:
       'Two crispy catfish fillets served over a bed of steamed vegetables and covered in your choice of one of our three signature sauces - Sweet and spicy Sam Rod sauces, Thai basil sauce, or our stir-fried Red Curry sauce.',
     price: {
-      lunch: [],
-      dinner: ['$19.99'],
+      lunch: ['$22.99'],
+      dinner: ['$22.99'],
     },
   },
   {
@@ -108,8 +123,8 @@ export const HouseFavoriteData = [
       isPortrait: false,
     },
     price: {
-      lunch: [],
-      dinner: ['$19.99'],
+      lunch: ['$22.99'],
+      dinner: ['$22.99'],
     },
   },
 ]

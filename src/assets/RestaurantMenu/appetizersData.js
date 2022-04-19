@@ -8,8 +8,8 @@ export const AppetizersData = [
       isPortrait: true,
     },
     price: {
-      lunch: ['$7.99'],
-      dinner: ['$7.99'],
+      lunch: ['$8.99'],
+      dinner: ['$8.99'],
     },
   },
   {
@@ -21,8 +21,8 @@ export const AppetizersData = [
       isPortrait: false,
     },
     price: {
-      lunch: ['$8.99'],
-      dinner: ['$8.99'],
+      lunch: ['$10.99'],
+      dinner: ['$10.99'],
     },
   },
   {
@@ -30,13 +30,12 @@ export const AppetizersData = [
     description:
       'Deep fried spring rolls stuff with minced chicken or only vegetables, egg, glass noodle and mixed vegetable, served with homemade sweet chili sauce.',
     image: {
-      path:
-        'https://s3-media3.fl.yelpcdn.com/bphoto/Pwx74lme9XoPeLmuYRFPnQ/o.jpg',
+      path: 'https://s3-media3.fl.yelpcdn.com/bphoto/Pwx74lme9XoPeLmuYRFPnQ/o.jpg',
       isPortrait: false,
     },
     price: {
-      lunch: ['$7.99'],
-      dinner: ['$7.99'],
+      lunch: ['$8.99'],
+      dinner: ['$8.99'],
     },
   },
   {
@@ -44,13 +43,12 @@ export const AppetizersData = [
     description:
       'Fresh spring rolls made with chicken or only vegetables, noodles, bean sprouts, and lettuce wrapped in rice paper. Served with sweet chili sauce and crushed roasted peanuts.',
     image: {
-      path:
-        'https://s3-media3.fl.yelpcdn.com/bphoto/Ji_6x-VqwNoGw46r4U-Sqg/o.jpg',
+      path: 'https://s3-media3.fl.yelpcdn.com/bphoto/Ji_6x-VqwNoGw46r4U-Sqg/o.jpg',
       isPortrait: false,
     },
     price: {
-      lunch: ['$7.99'],
-      dinner: ['$7.99'],
+      lunch: ['$8.99'],
+      dinner: ['$8.99'],
     },
   },
   {
@@ -58,13 +56,12 @@ export const AppetizersData = [
     description:
       'Crab meat, cream-cheese, cucumber, green leaf lettuce, bean sprout, and carrot wrapped in rice paper served with sweet chili sauce and crushed roasted peanuts.',
     image: {
-      path:
-        'https://s3-media1.fl.yelpcdn.com/bphoto/KNdNUOne1Fh5GUvJbiHy8w/o.jpg',
+      path: 'https://s3-media1.fl.yelpcdn.com/bphoto/KNdNUOne1Fh5GUvJbiHy8w/o.jpg',
       isPortrait: false,
     },
     price: {
-      lunch: ['$8.99'],
-      dinner: ['$8.99'],
+      lunch: ['$9.99'],
+      dinner: ['$9.99'],
     },
   },
   {
@@ -76,8 +73,8 @@ export const AppetizersData = [
       isPortrait: false,
     },
     price: {
-      lunch: ['$10.99'],
-      dinner: ['$10.99'],
+      lunch: ['$12.99'],
+      dinner: ['$12.99'],
     },
   },
   {
@@ -85,13 +82,12 @@ export const AppetizersData = [
     description:
       'Delicately fried, and complemented with a homemade chili sauce.',
     image: {
-      path:
-        'https://s3-media4.fl.yelpcdn.com/bphoto/BWiUC7nLxeUHyXyYX-JuSA/o.jpg',
+      path: 'https://s3-media4.fl.yelpcdn.com/bphoto/BWiUC7nLxeUHyXyYX-JuSA/o.jpg',
       isPortrait: true,
     },
     price: {
-      lunch: ['$8.99'],
-      dinner: ['$8.99'],
+      lunch: ['$9.99'],
+      dinner: ['$9.99'],
     },
   },
   {
@@ -103,39 +99,16 @@ export const AppetizersData = [
       isPortrait: false,
     },
     price: {
-      lunch: ['$10.99'],
-      dinner: ['$10.99'],
+      lunch: ['$11.99'],
+      dinner: ['$11.99'],
     },
   },
   {
-    name: 'Baramee Thai Wings',
+    name: 'Phikul Thai Wings',
     description:
       'Marinated in a spicy garlic sauce with fresh basil. Deep fried to perfection.',
     image: {
       path: 'https://i.imgur.com/QbF7NGu.jpg',
-      isPortrait: false,
-    },
-    price: {
-      lunch: ['$10.99'],
-      dinner: ['$10.99'],
-    },
-  },
-  {
-    name: 'Spring Roll Deluxe',
-    description:
-      'Two of our soft spring rolls and two of our crispy spring rolls.',
-    image: null,
-    price: {
-      lunch: ['$9.99'],
-      dinner: ['$9.99'],
-    },
-  },
-  {
-    name: 'Baramee Thai Platter',
-    description:
-      'A delicious of Thai mixed appetizers with Crab Rangoon (4 Pcs), Soft Spring Roll (2 Pcs) and Crispy Spring roll (2 Pcs)',
-    image: {
-      path: 'https://i.imgur.com/agdjyz3.jpg',
       isPortrait: false,
     },
     price: {
@@ -144,25 +117,47 @@ export const AppetizersData = [
     },
   },
   {
-    name: 'Fresh Shrimp Rolls',
-    description: null,
+    name: 'Spring Roll Deluxe',
+    description:
+      'Two of our soft spring rolls and two of our crispy spring rolls.',
     image: null,
     price: {
-      lunch: ['$9.99'],
-      dinner: ['$9.99'],
+      lunch: ['$10.99'],
+      dinner: ['$10.99'],
+    },
+  },
+  {
+    name: 'Phikul Thai Platter',
+    description:
+      'A delicious of Thai mixed appetizers with Crab Rangoon (4 Pcs), Soft Spring Roll (2 Pcs) and Crispy Spring roll (2 Pcs)',
+    image: {
+      path: 'https://i.imgur.com/agdjyz3.jpg',
+      isPortrait: false,
+    },
+    price: {
+      lunch: ['$15.99'],
+      dinner: ['$15.99'],
     },
   },
   {
     name: 'Edamame',
     description: 'Lightly salted and steamed soy beans.',
     image: {
-      path:
-        'https://s3-media1.fl.yelpcdn.com/bphoto/tqero_VtxfKOaGO93MrjtA/o.jpg',
+      path: 'https://s3-media1.fl.yelpcdn.com/bphoto/tqero_VtxfKOaGO93MrjtA/o.jpg',
       isPortrait: false,
     },
     price: {
-      lunch: ['$6.99'],
-      dinner: ['$6.99'],
+      lunch: ['$8.99'],
+      dinner: ['$8.99'],
+    },
+  },
+  {
+    name: 'Fresh Shrimp Rolls',
+    description: null,
+    image: null,
+    price: {
+      lunch: ['$10.99'],
+      dinner: ['$10.99'],
     },
   },
 ]
